@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="images/faviconEX.png" type="image/gif" />
+  <title>ElevateX Academy</title>
+
+  <!-- Typed js for typing animation-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/14c762b9ac.js" crossorigin="anonymous"></script>
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet"/>
+
+  <!-- Email.js -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet"/>
+</head>
+
+<body>
+  
+  <!-- Scroll Button -->
+  <div class="scroll-up-btn">
+    <i class="fas fa-angle-up"></i>
+</div>
+
+  <!-- header section start -->
+  <header class="header_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <a href="index.html" class="navbar-brand">
+          <img src="images/faviconEX.png" alt="ElevateX Academy"></a>
+        </a>
+        <div class="" id="">
+          <div class="custom_menu-btn">
+            <button onclick="openNav()">
+            <span class="s-1"></span>
+            <span class="s-2"></span>
+            <span class="s-3"></span>
+          </button>
+          <div class="overlay" id="myNav">
+            <span class="closebtn" onclick="closeNav()">&times;</span>
+            <div class="overlay-content">
+              <a href="#home" data-scroll="true" style="scroll-behavior: smooth ">Home</a>
+              <a href="#about" data-scroll="true" style="scroll-behavior: smooth;">About</a>
+              <a href="#course" data-scroll="true" style="scroll-behavior: smooth;">Courses</a>
+              <a href="#testimonial" data-scroll="true" style="scroll-behavior: smooth;">Testimonial</a>
+              <a href="#contact" data-scroll="true" style="scroll-behavior: smooth;">Contact</a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- End of header section -->
+
+   <!-- Banner Modal Code -->
+   <div id="overlay"></div>
+   <div id="bannerModal">
+       <span class="close-btn" id="closeBtn">&times;</span>
+       <div class="banner">
+           <div class="left-content">
+               <h2>Dashain - Tihar Delight with Discounted Fees!</h2>
+               <h1>Enjoy a 20% discount on every course</h1>
+               <p>Celebrate the festive season with exclusive discounts on courses designed to kickstart your career!</p>
+               <a href="#contact" class="enroll-btn">Enroll Now</a>
+           </div>
+           <div class="right-content">
+               <img src="images/try.png" alt="Festive Delight Image">
+           </div>
+       </div>
+   </div>
+
+  <!-- slider section -->
+  <section class="slider_section position-relative" id="home">
+    <div class="slider_bg_box">
+      <img src="images/bg1.jpg" alt="">
+    </div>
+    
+    <div class="container">
+      <div class="col-md-8 mr-auto">
+        <div class="detail-box">
+          <h2>Accelerate your learning journey with</h2>
+          <div class="text-1"><span class="typing"></span></div>
+          <p>where speed meets knowledge and delivery</p>
+          <a href="#course" class="btn custom-btn" style="scroll-behavior: smooth; ">
+            Find Courses<i class="fas fa-arrow-right"></i>
+          </a>          
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of slider section -->
+
+  
+
+  <!-- about section -->
+  <section class="about_section layout_padding-bottom" id="about">
+    <div class="container">
+       <div class="heading_container">
+            <h2>About Us</h2>
+        </div>
+          <div class="row">
+            <div class="col-md-6 order-md-1 order-1">
+              <div class="img-box">
+                <img src="images/abt.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-md-6 order-md-2 order-2">
+              <div class="detail-box">
+                <div class="text">"Unlocking Potential Through Comprehensive Learning and Real-World Experience, On-time Delivery"</div>
+                <p>ElevateX Academy is a cutting-edge institution dedicated to empowering individuals with in-demand skills in Frontend Web Development, Data Analysis and IT Service provider. Our mission is to bridge the gap between ambition and opportunity, providing a supportive environment for students as well as for our clients to elevate their journey ahead.</p>
+                <p><i class="fas fa-check"></i> IT Support </p>
+                <p><i class="fas fa-check"></i> Web Development</p>
+                <p><i class="fas fa-check"></i> Cloud Computing</p>
+                <p><i class="fas fa-check"></i> Expert Trainers</p>
+                <p><i class="fas fa-check"></i> Internship + Job placement support</p>
+                
+            </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </section>
+<!-- End of about us page -->
+
+<!-- Prepare Section Start -->
+<section class="prepare-section py-5" id="prepare">
+  <div class="container">
+    <div class="heading_container">
+      <h2>How we prepare you</h2>
+  </div>
+    <p class="prepare-description text-justify">
+      In the landscape of job training programs, ElevateX sets itself apart by focusing on your success. ElevateX instructors and mentors take the time to understand each student personally, offering resources, tools, and support whenever obstacles emerge.
+    </p>
+    <div class="d-flex justify-content-between row mt-4">
+      <!-- Left Column -->
+      <div class="col-md-6 mb-3 d-flex flex-column">
+        <div class="prepare-box p-3">
+          <h5 class="prepare-subtitle mb-2">Interview Rehearsal</h5>
+          <p class="prepare-text">Through mock interviews followed by real-time feedback and coaching, the ElevateX team ensures that all graduates are confident and ready for their interviews.</p>
+        </div>
+        <div class="prepare-box p-3 mt-3">
+          <h5 class="prepare-subtitle mb-2">Resume Building</h5>
+          <p class="prepare-text">A well-crafted resume can unlock new career opportunities. ElevateX students are taught how to create resumes that effectively highlight their skills and experiences.</p>
+        </div>
+      </div>
+      <!-- Right Column -->
+      <div class="col-md-6 mb-3 d-flex flex-column">
+        <div class="prepare-box p-3">
+          <h5 class="prepare-subtitle mb-2">Coaching</h5>
+          <p class="prepare-text">The instructors and mentors at ElevateX go beyond teaching; they act as coaches, supporting their students through both successes and challenges.</p>
+        </div>
+        <div class="prepare-box p-3 mt-3">
+          <h5 class="prepare-subtitle mb-2">Ongoing Support</h5>
+          <p class="prepare-text">After graduation, mentors and instructors continue to check in with alums, providing support with the job search and advice for continued success.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end of How we prepare section  -->
+
+<!-- Course section start  -->
+<section class="course_section layout_padding" id="course">
+  <div class="container">
+    <div class="heading_container">
+      <h2>Courses</h2>
+    </div>
+    <div class="row">
+      <div class="d-flex flex-wrap align-items-start">
+        <!-- First Course -->
+        <div class="col-md-6 d-flex flex-column">
+          <div class="detail_container flex-grow-1">
+            <div class="detail-box">
+              <div class="header-section">
+                <i class="fas fa-chart-line" style="font-size: 36px; color: #0096ff; margin-right: 10px;"></i>
+
+                  <h5 style="color: #0096ff;">Mastering Data Analysis</h5>
+              </div>
+              <div class="img-box">
+                <img src="images/da.jpg" alt="Mastering Data Analysis" style="width: 100%; height: auto;">
+              </div>
+              <p>Data Analytics involves examining data to convert it into actionable information, which is then used by organizations to make informed business decisions. A Data Analyst can work across various industries, helping manage, analyze, visualize, and present data for both internal and external stakeholders. Leverage data to inform decisions, anticipate trends, and enhance your value across various industries.</p>
+              <button class="toggle-btn" id="more-details-btn1" onclick="toggleDetails('details1', 'more-details-btn1', 'less-details-btn1')">More Details</button>
+              <div id="details1" class="more-details" style="display: none;">
+                <p><i class="fas fa-check"></i> Master essential tools like SQL, Excel, Python and Power BI</p>
+                <p><i class="fas fa-check"></i> Develop the ability to interpret and analyze complex data sets</p>
+                <p><i class="fas fa-check"></i> Acquire practical skills to handle data confidently in your career</p>
+                <p><i class="fas fa-check"></i> Position yourself as a key player in today’s data-centric environment</p>
+              </div>
+              <button class="toggle-btn" id="less-details-btn1" onclick="toggleDetails('details1', 'more-details-btn1', 'less-details-btn1')" style="display: none;">Less Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Course -->
+        <div class="col-md-6 d-flex flex-column">
+          <div class="detail_container flex-grow-1">
+            <div class="detail-box">
+              <div class="header-section">
+                <i class="fas fa-code" style="font-size: 36px; color: #0096ff; margin-right: 10px;"></i>
+                  <h5 style="color: #0096ff;">Web Development</h5>
+
+              </div>
+              <div class="img-box">
+                <img src="images/frnt.jpg" alt="Web Development" style="width: 100%; height: auto;">
+              </div>
+              <p>As a Web Developer, you will lead the way in shaping the future of web design. Your responsibilities will encompass creating engaging content, assisting clients in developing websites and features, and collaborating with your team to troubleshoot and resolve coding challenges.</p>
+              <button class="toggle-btn" id="more-details-btn2" onclick="toggleDetails('details2', 'more-details-btn2', 'less-details-btn2')">More Details</button>
+              <div id="details2" class="more-details" style="display: none;">
+                <p><i class="fas fa-check"></i> Master essential skills like HTML, CSS3, JavaScript (ES6), Version control with Git and GitHub</p>
+                <p><i class="fas fa-check"></i> Develop end-to-end full responsive websites</p>
+                <p><i class="fas fa-check"></i> Position yourself as a key player in today’s web-development environment</p>
+              </div>
+              <button class="toggle-btn" id="less-details-btn2" onclick="toggleDetails('details2', 'more-details-btn2', 'less-details-btn2')" style="display: none;">Less Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- course section end  -->
+
+
+
+<!-- Testimonial section -->
+<section class="client_section layout_padding" id="testimonial">
+  <div class="container">
+    <div class="heading_container heading_center">
+      <h2>What says our client</h2>
+    </div>
+    <div class="carousel slide" id="carouselExampleControls" data-ride:="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/client1.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>Reshika Sharma</h4>
+              <p>"My journey at ElevateX Academy has been transformative, equipping me with skills I never thought I could master! The instructors are incredibly supportive, and the hands-on projects made learning engaging and fun."
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/client2.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>Luca Moretti</h4>
+              <p>"ElevateX Academy exceeded my expectations, providing practical knowledge that I can apply in real-world projects. The diverse learning environment and networking opportunities have truly enriched my experience."
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel_btn-box">
+        <a href="#carouselExampleControls" class="carousel-control-prev" role="button" data-slide="prev">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a href="#carouselExampleControls" class="carousel-control-next" role="button" data-slide="next">
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end of client section -->
+
+<!-- contact section -->
+<section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>We’re here to support you on your learning journey! Whether you have questions, feedback, or need assistance, our dedicated team is ready to help.
+                    </p>
+                    <div class="icons">
+                        <div class="row">
+                            <a href="index.html"><img src="images/faviconEX.png" alt="ElevateX Academy"></a>
+                            <div class="info">
+                                
+                                <div class="sub-title">ElevateX Academy</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <a href="https://maps.app.goo.gl/UJHVCWCXjXfcSwTM9" target="_blank"><i class="fas fa-location-dot"></i></a>
+                            <div class="info">
+                               
+                                <div class="sub-title">Melbourne VIC 3000, Australia</div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <a href="mailto:info.elevatexacademy@gmail.com"><i class="fas fa-envelope"></i></a>
+                            <div class="info">
+                                
+                                <div class="sub-title">info@elevatexacademy.com</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                          <a href="https://wa.me/61400151400?text=Hello!%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                            <div class="info">
+                                <div class="sub-title"> +61 400 151 400 </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                          <a href="tel:+61 410 442 999"><i class="fas fa-phone"></i></a>
+                          <div class="info">
+                              <div class="sub-title">+61 410 442 999 </div>
+                          </div>
+                      </div>
+                        <div class="social-section">
+                            <div class="social-title">Join Our Social Community</div>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com/profile.php?id=61566501635604" target="_blank"><i class="fa-brands fa-facebook" id="facebook"></i></a>
+                                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram" id="instagram"></i></a>
+                                <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in" id="linkedin"></i></a>
+                                <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok" id="tiktok"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="column right">
+                    <div class="text">Message us</div>
+                    <form>
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" id="alphabetInput" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" id="emailInput" placeholder="Email" required>
+                                <p id="emailValidationMessage" style="color: red;"></p>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="number" id="numberInput"  placeholder="Contact number" minlength="10" maxlength="10">
+                            <p id="errorText" style="color: red;"></p>
+                        </div>
+
+                        <div class="field">
+                            <input type="text" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" id="message" rows="10" placeholder="Message.." required></textarea>
+                        </div>
+                        <div class="button-area">
+                          <button id="sendButton" type="submit" onclick="sendMail()">Send message</button>
+                      </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- End of contact section -->
+
+
+
+  <!-- start of footer -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="footer-info">
+        <p>We acknowledge the Traditional Custodians of the unceded lands and waterways on which ElevateX Academy does business. We pay our deep respect to the Ancestors and Elders of Wadawurrung Country and also acknowledge all First Nations Peoples that make contributions to our learning communities.</p>
+        <br>
+        <span><span class="far fa-copyright"></span> 2024 <a href="index.html">ElevateX Academy </a>| All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+  <!-- end of footer section -->
+
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+
+
+</body>
+
+</html>
