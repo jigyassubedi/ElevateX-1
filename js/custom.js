@@ -203,13 +203,58 @@ function cleanUpUrl() {
 document.addEventListener("DOMContentLoaded", cleanUpUrl);
 
 
-window.onload = function() {
-    // Show the banner when the page loads
+//Id sync smoothly and visible with title
+document.addEventListener('DOMContentLoaded', function() {
+    const navbarHeight = document.querySelector('.navbar').offsetHeight; // Get the navbar height
+
+    // Attach click event to all links with data-scroll="true"
+    document.querySelectorAll('a[data-scroll="true"]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault(); // Prevent default anchor click behavior
+
+        const targetId = this.getAttribute('href').substring(1); // Get the section ID
+        const targetElement = document.getElementById(targetId); // Find the section
+
+        if (targetElement) {
+          // Calculate the scroll position with the offset
+          const targetPosition = targetElement.offsetTop - navbarHeight;
+
+          // Smooth scroll to the position
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  });
+
+  //Both the loader and the banner modal logic are inside the same window.onload function.
+  
+  window.onload = function () {
+    // Loader Progress Bar
+    let progressBar = document.getElementById('progress-bar');
+    let width = 0;
+
+    // Simulate the progress of loading
+    let interval = setInterval(function() {
+        if (width >= 100) {
+            clearInterval(interval);  // Stop once complete
+            document.getElementById("loader").style.display = "none"; // Hide loader
+            document.getElementById("content").style.display = "block"; // Show content
+        } else {
+            width += 1;  // Increase progress bar width
+            progressBar.style.width = width + '%';  // Update the progress bar's width
+        }
+    }, 30);  // Speed of loading
+
+    // Offer Banner Logic
     const bannerModal = document.getElementById('bannerModal');
     const closeBtn = document.getElementById('closeBtn');
     const overlay = document.getElementById('overlay');
     const enrollBtn = document.querySelector('.enroll-btn'); // Select the Enroll Now button
 
+    // Show the banner when the page loads
     bannerModal.style.display = 'block';
     overlay.style.display = 'block';
 
@@ -237,48 +282,3 @@ window.onload = function() {
         overlay.style.display = 'none';
     };
 };
-
-//Id sync smoothly and visible with title
-document.addEventListener('DOMContentLoaded', function() {
-    const navbarHeight = document.querySelector('.navbar').offsetHeight; // Get the navbar height
-
-    // Attach click event to all links with data-scroll="true"
-    document.querySelectorAll('a[data-scroll="true"]').forEach(link => {
-      link.addEventListener('click', function(e) {
-        e.preventDefault(); // Prevent default anchor click behavior
-
-        const targetId = this.getAttribute('href').substring(1); // Get the section ID
-        const targetElement = document.getElementById(targetId); // Find the section
-
-        if (targetElement) {
-          // Calculate the scroll position with the offset
-          const targetPosition = targetElement.offsetTop - navbarHeight;
-
-          // Smooth scroll to the position
-          window.scrollTo({
-            top: targetPosition,
-            behavior: 'smooth'
-          });
-        }
-      });
-    });
-  });
-
-  //loading animation
-  window.onload = function () {
-    let progressBar = document.getElementById('progress-bar');
-    let width = 0;
-
-    // Simulate the progress of loading
-    let interval = setInterval(function() {
-        if (width >= 100) {
-            clearInterval(interval);  // Stop once complete
-            document.getElementById("loader").style.display = "none"; // Hide loader
-            document.getElementById("content").style.display = "block"; // Show content
-        } else {
-            width += 1;  // Increase progress bar width
-            progressBar.style.width = width + '%';  // Update the progress bar's width
-        }
-    }, 30);  // Speed of loading
-};
-
