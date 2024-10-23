@@ -31,6 +31,12 @@
 }
 
 @media (max-width: 820px) {
+  #loader img{
+    width: 200px;
+  }
+  #progress-bar-container {
+    width: 30%;  /* Reduced width */
+  }
   .slider_section .detail-box h2 {
     font-size: 37px;
   }
@@ -50,6 +56,12 @@
 }
 
 @media (max-width: 769px) {
+  #loader img{
+    width: 200px;
+  }
+  #progress-bar-container {
+    width: 30%;  /* Reduced width */
+  }
   .about_section .img-box {
     padding: 0 25px 25px 25px;
   }
@@ -148,6 +160,12 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #loader img{
+    width: 200px;
+  }
+  #progress-bar-container {
+    width: 25%;  /* Reduced width */
+  }
   .navbar-brand img{
     max-height: 7vh;
       margin-left: 18px;
@@ -163,6 +181,12 @@
 }
 
 @media (max-width: 576px) {
+  #loader img{
+    width: 150px;
+  }
+  #progress-bar-container {
+    width: 40%;  /* Reduced width */
+  }
   .custom-btn {
     font-size: 14px;
     padding: 8px 20px;

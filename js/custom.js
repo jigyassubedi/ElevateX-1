@@ -238,6 +238,7 @@ window.onload = function() {
     };
 };
 
+//Id sync smoothly and visible with title
 document.addEventListener('DOMContentLoaded', function() {
     const navbarHeight = document.querySelector('.navbar').offsetHeight; // Get the navbar height
 
@@ -262,3 +263,22 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
+
+  //loading animation
+  window.onload = function () {
+    let progressBar = document.getElementById('progress-bar');
+    let width = 0;
+
+    // Simulate the progress of loading
+    let interval = setInterval(function() {
+        if (width >= 100) {
+            clearInterval(interval);  // Stop once complete
+            document.getElementById("loader").style.display = "none"; // Hide loader
+            document.getElementById("content").style.display = "block"; // Show content
+        } else {
+            width += 1;  // Increase progress bar width
+            progressBar.style.width = width + '%';  // Update the progress bar's width
+        }
+    }, 30);  // Speed of loading
+};
+
