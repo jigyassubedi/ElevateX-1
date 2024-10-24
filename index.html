@@ -9,33 +9,31 @@
   <!-- Site Metas -->
   <link rel="icon" href="images/faviconEX.png" type="image/gif" />
   <title>ElevateX Academy</title>
-
   <!-- Meta Description for SEO -->
   <meta name="description" content="ElevateX Academy provides comprehensive courses in Web Development, Data Analysis, and Cloud Computing with expert trainers and career support. Accelerate your career today!">
-    
   <!-- Meta Keywords for SEO -->
   <meta name="keywords" content="ElevateX Academy, Web Development, Front end Development, Data Analysis, IT Services, Cloud Computing, Expert Trainers, Job Placement Support, Melbourne, Australia, Education, Bootcamp, Technical training, Sydney, adelaide, Perth, Hobert, Darwin, Brisbane, Training, Graduate, Internship, Job, Support, Creer, It Creer Development, Creer advancement, Front end, Developer">
-
   <!-- Canonical URL for SEO -->
   <link rel="canonical" href="https://www.elevatexacademy.com/">
-
   <!-- Typed js for typing animation-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- bootstrap cdn -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <!-- font awesome style -->
   <link href="css/font-awesome.min.css" rel="stylesheet"/>
   <script src="https://kit.fontawesome.com/14c762b9ac.js" crossorigin="anonymous"></script>
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet"/>
-
   <!-- Email.js -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet"/>
+
 </head>
 
 <body>
@@ -49,7 +47,7 @@
     <div id="progress-bar-container">
         <div id="progress-bar"></div>
     </div>
-</div>
+  </div>
 
   <!-- Main Content -->
   <div id="content" style="display:none;">
@@ -161,40 +159,44 @@
 <!-- End of about us page -->
 
 <!-- Prepare Section Start -->
-<section class="prepare-section py-5" id="prepare">
+<section class="prepares py-5">
   <div class="container">
     <div class="heading_container">
       <h2>How we prepare you</h2>
   </div>
-    <p class="prepare-description text-justify">
-      In the landscape of job training programs, ElevateX sets itself apart by focusing on your success. ElevateX instructors and mentors take the time to understand each student personally, offering resources, tools, and support whenever obstacles emerge.
-    </p>
-    <div class="d-flex justify-content-between row mt-4">
-      <!-- Left Column -->
-      <div class="col-md-6 mb-3 d-flex flex-column">
-        <div class="prepare-box p-3">
-          <h5 class="prepare-subtitle mb-2">Interview Rehearsal</h5>
-          <p class="prepare-text">Through mock interviews followed by real-time feedback and coaching, the ElevateX team ensures that all graduates are confident and ready for their interviews.</p>
-        </div>
-        <div class="prepare-box p-3 mt-3">
-          <h5 class="prepare-subtitle mb-2">Resume Building</h5>
-          <p class="prepare-text">A well-crafted resume can unlock new career opportunities. ElevateX students are taught how to create resumes that effectively highlight their skills and experiences.</p>
-        </div>
+      <div class="row text-center">
+          <div class="col-lg-3 col-md-6 mb-4">
+              <div class="prepare-box">
+                  <i class="fas fa-comments fa-3x mb-3"></i>
+                  <h4>Mock Interviews</h4>
+                  <p>Practice real interview scenarios with immediate feedback to boost your confidence.</p>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+              <div class="prepare-box">
+                  <i class="fas fa-file-alt fa-3x mb-3"></i>
+                  <h4>Resume Building</h4>
+                  <p>Learn how to craft a standout resume that showcases your skills and unlocks new opportunities.</p>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+              <div class="prepare-box">
+                  <i class="fas fa-chalkboard-teacher fa-3x mb-3"></i>
+                  <h4>Personal Coaching</h4>
+                  <p>Our experts go beyond the classroom, offering one-on-one coaching to help you succeed in every step of your career.</p>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+              <div class="prepare-box">
+                  <i class="fas fa-hands-helping fa-3x mb-3"></i>
+                  <h4>Ongoing Support</h4>
+                  <p>Even after graduation, our support continues with career advice and job search assistance.</p>
+              </div>
+          </div>
       </div>
-      <!-- Right Column -->
-      <div class="col-md-6 mb-3 d-flex flex-column">
-        <div class="prepare-box p-3">
-          <h5 class="prepare-subtitle mb-2">Coaching</h5>
-          <p class="prepare-text">The instructors and mentors at ElevateX go beyond teaching; they act as coaches, supporting their students through both successes and challenges.</p>
-        </div>
-        <div class="prepare-box p-3 mt-3">
-          <h5 class="prepare-subtitle mb-2">Ongoing Support</h5>
-          <p class="prepare-text">After graduation, mentors and instructors continue to check in with alums, providing support with the job search and advice for continued success.</p>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
+
 <!-- end of How we prepare section  -->
 
 <!-- Course section start  -->
@@ -203,53 +205,70 @@
     <div class="heading_container">
       <h2>Courses</h2>
     </div>
-    <div class="row">
-      <div class="d-flex flex-wrap align-items-start">
-        <!-- First Course -->
-        <div class="col-md-6 d-flex flex-column">
-          <div class="detail_container flex-grow-1">
-            <div class="detail-box">
-              <div class="header-section">
-                <i class="fas fa-chart-line" style="font-size: 36px; color: #0096ff; margin-right: 10px;"></i>
+    <div class="container">
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="card" onclick="toggleFlip(this)">
+          <div class="flip-card-inner">
+            <div class="card-front">
+              <img src="images/da.jpg" class="card-img-top" alt="Course 1 Image">
+              <div class="card-body">
+                <h3>Mastering Data Analysis</h3>
+                <p class="card-text">Transform raw data into actionable insights that drive business success. Elevate your career with our Data Analytics course designed to equip you with the essential skills to thrive in today’s data-driven world.</p>
+              </div>
+            </div>
+            <div class="card-back">
+              <div class="card-body">
+                <h4>Master Tools</h4>
+                <p class="card-text">
+                  <i class="fas fa-database" style="color: #f29111;"></i> 
+                
+                  <i class="fas fa-file-excel" style="color: #217346;"></i> 
+                
+                  <i class="fab fa-python" style="color: #ffde57;"></i> 
+                  <i class="fas fa-chart-line" style="color: #D3D3D3;"></i> 
+                  <i class="fas fa-chart-bar" style="color: #F2C811;"></i> 
 
-                  <h5 style="color: #0096ff;">Mastering Data Analysis</h5>
+                  
+                </p>
+                <p><i class="fas fa-check"></i> Gain hands-on experience in interpreting complex data sets. </p>
+                <p><i class="fas fa-check"></i> Position yourself as a key decision-maker in any industry by leveraging data to anticipate trends and inform strategies.</p>
+              <p style="font-style: italic; text-align: center;">"Take control of your future with data expertise!"</p></p>
+              
               </div>
-              <div class="img-box">
-                <img src="images/da.jpg" alt="Mastering Data Analysis" style="width: 100%; height: auto;">
-              </div>
-              <p>Data Analytics involves examining data to convert it into actionable information, which is then used by organizations to make informed business decisions. A Data Analyst can work across various industries, helping manage, analyze, visualize, and present data for both internal and external stakeholders. Leverage data to inform decisions, anticipate trends, and enhance your value across various industries.</p>
-              <button class="toggle-btn" id="more-details-btn1" onclick="toggleDetails('details1', 'more-details-btn1', 'less-details-btn1')">More Details</button>
-              <div id="details1" class="more-details" style="display: none;">
-                <p><i class="fas fa-check"></i> Master essential tools like SQL, Excel, Python and Power BI</p>
-                <p><i class="fas fa-check"></i> Develop the ability to interpret and analyze complex data sets</p>
-                <p><i class="fas fa-check"></i> Acquire practical skills to handle data confidently in your career</p>
-                <p><i class="fas fa-check"></i> Position yourself as a key player in today’s data-centric environment</p>
-              </div>
-              <button class="toggle-btn" id="less-details-btn1" onclick="toggleDetails('details1', 'more-details-btn1', 'less-details-btn1')" style="display: none;">Less Details</button>
             </div>
           </div>
         </div>
+  
+        <!-- Card 2 -->
+        <div class="card" onclick="toggleFlip(this)">
+          <div class="flip-card-inner">
+            <div class="card-front">
+              <img src="images/frnt.jpg" class="card-img-top" alt="Course 2 Image">
+              <div class="card-body">
+                <h3>Front-End Web Development</h3>
+                <p class="card-text">Become a skilled Web Developer and create dynamic, user-friendly websites. Our course equips you with the essential tools and techniques to thrive in the fast-paced world of web development.</p>
+              </div>
+            </div>
+            <div class="card-back">
+              <div class="card-body">
+                <h4>Master Tools</h4>
+                <p class="card-text">
+                 
+                  <i class="fab fa-html5" style="color: #E34F26;"></i> 
 
-        <!-- Second Course -->
-        <div class="col-md-6 d-flex flex-column">
-          <div class="detail_container flex-grow-1">
-            <div class="detail-box">
-              <div class="header-section">
-                <i class="fas fa-code" style="font-size: 36px; color: #0096ff; margin-right: 10px;"></i>
-                  <h5 style="color: #0096ff;">Web Development</h5>
+                  <i class="fab fa-css3-alt" style="color: #ebebeb;"></i> 
 
+                  <i class="fab fa-js" style="color: #F7DF1E;"></i>
+
+                  <i class="fab fa-git-alt" style="color: #F05032;"></i>
+                 
+                  <i class="fab fa-github" style="color: #181717;"></i> 
+                  <p><i class="fas fa-check"></i> Develop fully responsive, end-to-end websites that look great on any device. </p>
+                  <p><i class="fas fa-check"></i> Position yourself as a key contributor in today’s rapidly evolving web development landscape.</p>
+                </p>
+                <p style="font-style: italic; text-align: center;"> "Start building the web of tomorrow today!"</p>
               </div>
-              <div class="img-box">
-                <img src="images/frnt.jpg" alt="Web Development" style="width: 100%; height: auto;">
-              </div>
-              <p>As a Web Developer, you will lead the way in shaping the future of web design. Your responsibilities will encompass creating engaging content, assisting clients in developing websites and features, and collaborating with your team to troubleshoot and resolve coding challenges.</p>
-              <button class="toggle-btn" id="more-details-btn2" onclick="toggleDetails('details2', 'more-details-btn2', 'less-details-btn2')">More Details</button>
-              <div id="details2" class="more-details" style="display: none;">
-                <p><i class="fas fa-check"></i> Master essential skills like HTML, CSS3, JavaScript (ES6), Version control with Git and GitHub</p>
-                <p><i class="fas fa-check"></i> Develop end-to-end full responsive websites</p>
-                <p><i class="fas fa-check"></i> Position yourself as a key player in today’s web-development environment</p>
-              </div>
-              <button class="toggle-btn" id="less-details-btn2" onclick="toggleDetails('details2', 'more-details-btn2', 'less-details-btn2')" style="display: none;">Less Details</button>
             </div>
           </div>
         </div>
@@ -419,8 +438,11 @@
 
   <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  
   <!-- bootstrap js -->
   <script src="js/bootstrap.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
   <!-- custom js -->
   <script src="js/custom.js" defer></script>
 

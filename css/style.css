@@ -38,12 +38,12 @@ body {
 
 /* Progress Bar Container - smaller width and centered */
 #progress-bar-container {
-  width: 20%;  /* Reduced width */
-  height: 15px;  /* Reduced height */
+  width: 20%;  
+  height: 15px;  
   background-color: #ddd;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Slight shadow for a better look */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
   border: 2px solid white;
 }
 
@@ -129,9 +129,9 @@ body {
 
 .heading_container{
     display: flex;
-    justify-content: center;  /* Centers horizontally */
-    align-items: center;      /* Centers vertically */
-    text-align: center;       /* Center the text itself */
+    justify-content: center;  
+    align-items: center;      
+    text-align: center;       
   
 }
 .heading_container h2 {
@@ -158,7 +158,7 @@ h2 {
 
 /* Banner Modal Styling */
 #bannerModal {
-  display: none; /* Hidden by default */
+  display: none; 
   position: fixed;
   top: 50%;
   left: 50%;
@@ -251,7 +251,7 @@ h2 {
 
 /* Overlay to darken the background */
 #overlay {
-  display: none; /* Hidden by default */
+  display: none; 
   position: fixed;
   top: 0;
   left: 0;
@@ -289,7 +289,7 @@ h2 {
 /* all similar content styling codes */
 section{
     padding: 50px 0;
-      scroll-margin-top: 100px; /* Adjust the value based on your header height */
+      scroll-margin-top: 100px; 
 }
 .container-fluid{
   position: fixed;
@@ -316,7 +316,7 @@ section{
   z-index: 10000;
   
 }
-
+/* 
 .custom_menu-btn::before {
   content: "";
   position: absolute;
@@ -331,7 +331,7 @@ section{
   border-radius: 100%;
   -webkit-transition: all .3s;
   transition: all .3s;
-}
+} */
 
 .custom_menu-btn.menu_btn-style::before {
   width: 100vh;
@@ -371,7 +371,7 @@ section{
   display: block;
   width: 30px;
   height: 3px;
-  background-color: #000000;
+  background-color: #c2c2c2;
   margin: 2.5px 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -421,6 +421,8 @@ section{
   left: 20px;
   font-size: 36px;
   cursor: pointer;
+  color: #f6ece1;
+  
 }
 
 .overlay a {
@@ -550,7 +552,7 @@ a:focus {
   padding: 10px 45px;
   background-color: #0096ff;
   color: #ffffff;
-  border-radius: 5px;
+  border-radius: 6px;
   border: 1px solid #0096ff;
   -webkit-transition: all .2s;
   transition: all .2s;
@@ -625,16 +627,13 @@ a:focus {
 /* Course Section start  */
 
 .course_section{
-  padding: 40px 0;
-}
-.course_section .row {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding-top: 40px;
+  padding-bottom: 80px;
   
 }
+
 .course_section .heading_container {
-  margin-bottom: 20px; /* Reduce the bottom margin to control the gap */
+  margin-bottom: 20px; 
 }
 
 .course_section h2 {
@@ -645,86 +644,117 @@ a:focus {
   text-align: center; 
 }
 
-.course_section .header-section {
+
+.course_section .row {
   display: flex;
-  align-items: center;
-  margin-bottom: 20px; 
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
-.course_section .detail_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%; 
-  margin-bottom: -35px ;
-  font-family: 'Poppins', sans-serif;
-}
-
-.course_section .detail-box {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 35px;
-}
-
-.course_section .detail-box img {
-  width: 45px;
-  margin-bottom: 10px;
-}
-
-.course_section .course-image {
-  width: 100px; 
-  height: auto;
-  position: absolute; 
-  right: 10px; 
-  top: 10px; 
-}
-
-.course_section .detail-box p{
-  text-align: justify;
-  margin-top: 10px;
-}
-
-.course_section .img-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(70%, #006bb3));
-  background: linear-gradient(to bottom, transparent 70%, #006bb3 70%);
-  padding: 0 25px 45px 25px;
-  border-radius: 10px;
-}
-
-.course_section .img-box img {
+.card {
   width: 100%;
+  max-width: 500px;
+  height: 450px; 
+  border: 4px solid #006bb3;
   border-radius: 10px;
+  background: linear-gradient(to bottom, #006bb3, #69bcf7);
+  cursor: pointer;
+  perspective: 1000px; 
+  margin: 20px;
+  position: relative;
+  
+
 }
 
-.more-details {
-  margin-top: 10px;
-  font-size: 0.9em;
+.card-img-top {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  object-fit: cover;
 }
-.toggle-btn {
- background: #0096FF; 
-  color: white; 
-  padding: 10px 15px;
-  border: 2px solid #0096FF; 
-  border-radius: 5px;
-  font-size: 15px;
-  font-weight: 400;
+
+
+
+.card-body {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    padding: 15px;
+    color: #fff;
+}
+
+.card h4 {
+  margin-bottom: 10px;
+  color: #000;
+  
+}
+
+.card-text{
   font-family: 'Poppins', sans-serif;
-  display: inline-flex;
-  align-items: center;
-  transition: all 0.3s ease;
+  
 }
-.toggle-btn:hover {
-  background: none;
-  color: #0096FF; 
-  border: 2px solid #0096FF; 
+.card-text i {
+  margin-right: 22px; 
+  font-size: 30px;
 }
+
+.card-back p{
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+  align-items: left;
+}
+/* Flip card effect */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card.flip .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+
+.card-front {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /
+  
+  
+ 
+  
+}
+
+.card-back p {
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+
 /* About Section Styling */
 .about_section .row {
   -webkit-box-align: center;
@@ -748,14 +778,14 @@ a:focus {
 }
 
 .about_section .detail-box{
-  text-align: justify;
+  text-align: LEFT;
   font-weight: 400;
 }
 .about_section .detail-box .text {
   font-size: 25px;
   font-weight: 500;
   font-family: 'Ubuntu', sans-serif;
-  text-align: justify;
+  text-align: center;
 }
 .about_section .detail-box p {
   margin-top: 10px;
@@ -782,40 +812,36 @@ a:focus {
 }
 
 /* Prepare Section CSS */
-.prepare-section {
-  /* padding: 50px 0; */
+.prepares {
   background: -webkit-gradient(linear, left top, right top, from rgba(0, 107, 179, 0.75) to rgba(0, 107, 179, 0.2));
   background: linear-gradient(to right, rgba(0, 107, 179, 0.75), rgba(0, 107, 179, 0.2));
+}
+.prepare-box {
+  padding: 20px;
+  /* border: 1px solid #ddd;
+  border-radius: 10px; */
+   /* Make all prepare boxes the same height */
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure content aligns properly */
   font-family: 'Poppins', sans-serif;
 }
 
-.prepare-description {
-  color: #000;
-  text-align: justify;
-  font-size: 16px;
-  margin-bottom: 30px;
-}
-
-.prepare-box {
-  background-color: transparent;
-  margin-bottom: 20px; /* Reduce the gap between rows */
-}
-
-.prepare-subtitle {
+.prepare-box i {
   color: #006bb3;
-  font-weight: 500;
 }
 
-.prepare-text {
+.prepare-box h4 {
+  /* font-weight: bold; */
+  margin-bottom: 15px;
+  min-height: 50px; /* Adjusted to ensure all h3s align at the same level */
+}
+
+.prepare-box p {
   color: #000;
   font-size: 16px;
-  text-align: justify;
 }
-
-.d-flex {
-  margin-bottom: 15px; /* Reduce the gap between columns */
-}
-
 /* contact section styling */
 section .title{
   position: relative;
@@ -863,22 +889,22 @@ section .title{
 
 .contact .contact-content .row {
   display: flex;
-  align-items: center; /* Ensure icons and text align vertically */
-  margin-bottom: 20px; /* Add space between each row */
+  align-items: center; 
+  margin-bottom: 20px; 
   
 }
 
 .contact .contact-content .row .info {
-  margin-left: 15px; /* Adjust to control spacing between icon and text */
+  margin-left: 15px; 
   display: flex;
-  align-items: center; /* Ensures subtitle aligns with the icon */
+  align-items: center; 
 }
 
 .contact .contact-content .row i {
-  font-size: 30px; /* Adjusted for consistency in icon size */
+  font-size: 30px; 
   color: #0096ff;
-  width: 30px; /* Set consistent width */
-  height: 30px; /* Set consistent height */
+  width: 30px; 
+  height: 30px; 
   cursor: pointer;
 }
 #telephone {
@@ -891,24 +917,24 @@ section .title{
 }
 
 .contact .contact-content .row img {
-  max-height: 60px; /* Adjusted to standard size */
-  margin-left: -10px; /* Remove negative margin for better alignment */
-  width: 60px; /* Standardize size of image icons */
-  height: 60px; /* Standardize height */
+  max-height: 60px; 
+  margin-left: -10px; 
+  width: 60px; 
+  height: 60px; 
   cursor: pointer;
   margin-bottom: -8px;
 }
 
 .contact .contact-content .info .sub-title {
   color: black;
-  font-size: 16px; /* Set a uniform font size for all subtitles */
-  line-height: 1.5; /* Improve readability */
+  font-size: 16px; 
+  line-height: 1.5; 
 }
 
 
 /* Social Media Section Styling */
 .social-section {
-  margin-top: 20px; /* Space between telephone row and social media section */
+  margin-top: 20px; 
   text-align: left;
 }
 
@@ -924,46 +950,46 @@ section .title{
 }
 
 .social-icons a {
-  margin-right: 30px; /* Spacing between icons */
+  margin-right: 30px; 
   padding-top: 10px;
   display: inline-block;
-  transition: color 0.3s ease; /* Transition for hover effect */
+  transition: color 0.3s ease; 
 }
 
 /* Facebook Icon Color */
 #facebook {
-  color: #3b5998; /* Facebook Blue */
+  color: #3b5998; 
 }
 #facebook:hover {
-  color: #8b9dc3; /* Lighter Blue on Hover */
+  color: #8b9dc3; 
 }
 
 /* Instagram Icon Color */
 #instagram {
-  color: #C13584; /* Instagram Pink */
+  color: #C13584; 
 }
 #instagram:hover {
-  color: #E1306C; /* Lighter Pink on Hover */
+  color: #E1306C; 
 }
 
 /* LinkedIn Icon Color */
 #linkedin {
-  color: #0077b5; /* LinkedIn Blue */
+  color: #0077b5; 
 }
 #linkedin:hover {
-  color: #00a0dc; /* Lighter Blue on Hover */
+  color: #00a0dc; 
 }
 
 /* TikTok Icon Color */
 #tiktok {
-  color: #ee1d52; /* TikTok Cyan */
+  color: #ee1d52; 
 }
 #tiktok:hover {
-  color: #010101; /* Darker Color on Hover */
+  color: #010101; 
 }
 
 .social-icons i {
-  font-size: 30px; /* Adjusted for consistency in icon size */
+  font-size: 30px; 
   cursor: pointer;
 }
 
