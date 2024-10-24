@@ -203,37 +203,35 @@ function cleanUpUrl() {
 document.addEventListener("DOMContentLoaded", cleanUpUrl);
 
 
-//Id sync smoothly and visible with title
-document.addEventListener('DOMContentLoaded', function() {
-    const navbarHeight = document.querySelector('.navbar').offsetHeight; // Get the navbar height
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();  // Prevent default jump behavior
 
-    // Attach click event to all links with data-scroll="true"
-    document.querySelectorAll('a[data-scroll="true"]').forEach(link => {
-      link.addEventListener('click', function(e) {
-        e.preventDefault(); // Prevent default anchor click behavior
+        const targetID = this.getAttribute('href');
+        const targetElement = document.querySelector(targetID);
 
-        const targetId = this.getAttribute('href').substring(1); // Get the section ID
-        const targetElement = document.getElementById(targetId); // Find the section
+        // Get the current scroll position and adjust for the offset (e.g., fixed header height)
+        const offset = 60;  // Adjust this value as per your header height
+        const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
 
-        if (targetElement) {
-          // Calculate the scroll position with the offset
-          const targetPosition = targetElement.offsetTop - navbarHeight;
-
-          // Smooth scroll to the position
-          window.scrollTo({
-            top: targetPosition,
+        // Smooth scroll to the position, adjusted for the offset
+        window.scrollTo({
+            top: elementPosition - offset,
             behavior: 'smooth'
-          });
-        }
-      });
+        });
     });
-  });
+});
 
-  //Both the loader and the banner modal logic are inside the same window.onload function.
+
   
+//   loading animation  
   window.onload = function () {
-    // Check if the loader has already been shown in localStorage
-    if (!localStorage.getItem('loaderShown')) {
+    if (localStorage.getItem('loaderShown')) {
+        // Loader has been shown before, hide it immediately and show the content
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("content").style.display = "block";
+        displayBannerModal();  // Show the banner immediately
+    } else {
         // Show the loader and simulate loading progress
         let progressBar = document.getElementById('progress-bar');
         let width = 0;
@@ -249,12 +247,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 progressBar.style.width = width + '%';
             }
         }, 20);
-    } else {
-        // Loader already shown, skip to content
-        document.getElementById("loader").style.display = "none";
-        document.getElementById("content").style.display = "block";
-        displayBannerModal();  // Show the banner immediately
     }
+
+
+};
+
 
     // Offer Banner Logic
     const bannerModal = document.getElementById('bannerModal');
@@ -289,7 +286,8 @@ document.addEventListener('DOMContentLoaded', function() {
         bannerModal.style.display = 'none';
         overlay.style.display = 'none';
     };
-};
+
+
 
 //flip course card
 function toggleFlip(card) {
