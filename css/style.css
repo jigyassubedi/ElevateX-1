@@ -687,7 +687,6 @@ a:focus {
 .card h4 {
   margin-bottom: 10px;
   color: #000;
-  
 }
 
 .card-text{
@@ -699,6 +698,15 @@ a:focus {
   font-size: 30px;
 }
 
+.card-body p span i{
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 4px;
+}
+.card-body p span i:hover{
+  color: #006bb3;
+}
 .card-back p{
   font-family: 'Poppins', sans-serif;
   color: #000;
@@ -737,23 +745,20 @@ a:focus {
 
 .card-back {
   transform: rotateY(180deg);
-  padding: 15px;
+  padding: 5px;
   display: flex;
   flex-direction: column;
   overflow-y: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /
+  justify-content: flex-start; 
   
   
  
   
 }
 
-.card-back p {
-  padding-bottom: 10px;
-  overflow: hidden;
-}
+
 
 /* About Section Styling */
 .about_section .row {
