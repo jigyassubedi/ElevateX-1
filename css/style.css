@@ -966,15 +966,27 @@ section .title{
   color: #3b5998; 
 }
 #facebook:hover {
-  color: #8b9dc3; 
+  color: #4f81ee; 
 }
 
 /* Instagram Icon Color */
 #instagram {
-  color: #C13584; 
+  background: -webkit-gradient(linear, left top, right top, from(#F58529), to(#515BD4));
+  background: linear-gradient(to right, #F58529, #DD2A7B, #8134AF, #515BD4); 
+  -webkit-background-clip: text; 
+  -moz-background-clip: text; 
+  -ms-background-clip: text; 
+  background-clip: text; 
+  -webkit-text-fill-color: transparent; 
 }
 #instagram:hover {
-  color: #E1306C; 
+  background: -webkit-gradient(linear, left top, right top, from(#ff7300), to(#2537ff)); 
+  background: linear-gradient(to right, #ff7300, #ff0073, #a200ff, #2537ff); 
+  -webkit-background-clip: text; 
+  -moz-background-clip: text; 
+  -ms-background-clip: text; 
+  background-clip: text; 
+  -webkit-text-fill-color: transparent; 
 }
 
 /* LinkedIn Icon Color */
