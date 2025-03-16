@@ -249,6 +249,174 @@ h2 {
 
 }
 
+/* try */
+ /* Carousel container */
+ .carousel-container {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* Card styles */
+.card {
+  flex: 0 0 100%;
+  height: 500px;
+  perspective: 1000px;
+  cursor: pointer;
+  padding: 0 20px;
+  box-sizing: border-box;
+  
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.7s ;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  overflow: hidden;
+  
+}
+
+.card-front {
+  background-color: white;
+}
+
+.card-back {
+  background-color: white;
+  transform: rotateY(180deg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px; /* if details needed more make it less */
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.card-text {
+  margin-bottom: 15px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.card-back i.fas, .card-back i.fab {
+  font-size: 1.5rem;
+  margin: 0 5px;
+}
+
+.card-back p {
+  text-align: left;
+  margin: 8px 0;
+}
+
+.card-back i.fas.fa-check {
+  color: #0077b5;
+  margin-right: 8px;
+}
+/* Desktop view: larger image height */
+@media (min-width: 1024px) {
+  .card-img-top {
+    height: 290px; /* Slightly larger height on desktop */
+  }
+}
+
+/* Carousel navigation */
+.carousel-container {
+  position: relative; /* So the buttons can be positioned inside this container */
+}
+
+.carousel-navigation {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%); /* Center vertically */
+  padding: 0 20px;
+  z-index: 1;
+}
+
+.carousel-btn {
+  background-color: #0096FF;
+  border: 1px solid #0096FF;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: -20px; /* Moves the button slightly outside */
+  margin-right: -20px; /* Moves the button slightly outside */
+}
+
+.carousel-btn:hover {
+  background-color: #006bb3;
+  border: 1px solid #006bb3;
+}
+
+.carousel-btn:focus {
+  outline: none;
+}
+
+.carousel-btn i {
+  color: #fff;
+}
+
+/* Hiding the border of the div behind the card */
+.card {
+  border: none; /* Removes the border around the card */
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .carousel-container.desktop-view .card {
+    flex: 0 0 50%;
+  }
+}
+
+.layout_padding {
+  padding: 75px 0;
+}
+
 /* Overlay to darken the background */
 #overlay {
   display: none; 
@@ -650,7 +818,7 @@ a:focus {
   justify-content: center;
   flex-wrap: wrap;
 }
-.card {
+/* .card {
   width: 100%;
   max-width: 500px;
   height: 450px; 
@@ -682,14 +850,14 @@ a:focus {
     justify-content: flex-start; 
     padding: 15px;
     color: #fff;
-}
+} */
 
 /* .card h4 {
   margin-bottom: 10px;
   color: #000;
 } */
 
-.card-text{
+/* .card-text{
   font-family: 'Poppins', sans-serif;
   
 }
@@ -711,9 +879,9 @@ a:focus {
   font-family: 'Poppins', sans-serif;
   color: #000;
   align-items: left;
-}
+} */
 /* Flip card effect */
-.flip-card-inner {
+/* .flip-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
@@ -756,7 +924,7 @@ a:focus {
   
  
   
-}
+} */
 
 
 
@@ -1093,7 +1261,7 @@ background: none;
   background: linear-gradient(to right, rgba(0, 107, 179, 0.75), rgba(0, 107, 179, 0.2));
 }
 
-.client_section #carouselExampleControls {
+.client_section #testimonials {
   padding: 0 10%;
 }
 

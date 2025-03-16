@@ -293,3 +293,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 function toggleFlip(card) {
     card.classList.toggle('flip');
   }
+  

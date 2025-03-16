@@ -7,7 +7,7 @@
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
-  <link rel="icon" href="images/faviconEX.png" type="image/gif" />
+  <link rel="icon" href="images/silver-logo.png" type="image/gif" />
   <title>ElevateX Academy</title>
   <!-- Meta Description for SEO -->
   <meta name="description" content="ElevateX Academy provides comprehensive courses in Web Development, Data Analysis, and Cloud Computing with expert trainers and career support. Accelerate your career today!">
@@ -41,10 +41,10 @@
   <!-- Loader Section -->
   <div id="loader">
     <!-- ElevateX Academy Title -->
-    <img src="images/logo.png" alt="">
+    <img src="images/silver-logo.png" alt="">
 
     <!-- Progress Bar Container -->
-    <div id="progress-bar-container">
+    <div id="progress-bar-container" style="margin-top: 10px;">
         <div id="progress-bar"></div>
     </div>
   </div>
@@ -62,7 +62,7 @@
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg custom_nav-container">
         <a href="index.html" class="navbar-brand">
-          <img src="images/faviconEX.png" alt="ElevateX Academy"></a>
+          <img src="images/silver-logo.png" alt="ElevateX Academy"></a>
         </a>
         <div class="" id="">
           <div class="custom_menu-btn">
@@ -134,22 +134,27 @@
        <div class="heading_container">
             <h2>About Us</h2>
         </div>
-          <div class="row">
-            <div class="col-md-6 order-md-1 order-1">
-              <div class="img-box">
-                <img src="images/abt.jpg" alt="">
-              </div>
-            </div>
-            <div class="col-md-6 order-md-2 order-2">
+         
+            <div class="">
               <div class="detail-box">
-                <div class="text">"Unlocking Potential Through Comprehensive Learning and Real-World Experience"</div>
-                <p style="text-align: justify;">ElevateX Academy is a cutting-edge institution dedicated to empowering individuals with in-demand skills in Frontend Web Development, and Data Analysis. Our mission is to bridge the gap between ambition and opportunity, providing a supportive environment for students to elevate their journey ahead.</p>
+                <div class="text" style="text-align: left;">"Unlocking Potential Through Comprehensive Learning and Real-World Experience"</div>
+                <p style="text-align: justify;">ElevateX Academy is a premier institution dedicated to equipping individuals with in-demand tech and professional skills. Our mission is to empower learners with hands-on training and real-world expertise, preparing them for success in today’s dynamic industries.</p>
+                <p style="text-align: justify;">We offer specialized courses in Web Development and Data Analysis, providing students with the tools they need to excel in their careers. As part of our continuous growth, we are excited to announce that the following courses are coming soon: Network and System Support, Digital Marketing, Civil Engineering, Draftsmanship, and Construction Management. These programs are designed to meet the evolving demands of various industries, ensuring our students stay ahead in their fields.</p>
+                <p style="text-align: justify;">In addition to our educational offerings, ElevateX Academy is expanding its reach into IT consulting and services. This new venture, launching soon, will provide businesses with expert digital solutions to drive innovation and operational excellence.</p>
+                <p style="text-align: justify;">Join us in shaping the future—whether you're looking to upskill, reskill, or leverage cutting-edge IT solutions, ElevateX Academy is your gateway to success.</p>
                 
                 <p><i class="fas fa-check"></i> Web Development</p>
                 <p><i class="fas fa-check"></i> Data Analysis</p>
                 <p><i class="fas fa-check"></i> Expert Trainers</p>
                 <p><i class="fas fa-check"></i> Internship + Job placement support</p>
                 
+                <div class="text" style="text-align: left;">New Courses Coming Soon:</div>
+                <p><i class="fas fa-check"></i> Network and System Support</p>
+                <p><i class="fas fa-check"></i> Digital Marketing</p>
+                <p><i class="fas fa-check"></i> Civil Engineering</p>
+                <p><i class="fas fa-check"></i> Draftsmanship</p>
+                <p><i class="fas fa-check"></i> Construction Management</p>
+
             </div>
               </div>
             </div>
@@ -199,88 +204,334 @@
 
 <!-- end of How we prepare section  -->
 
-<!-- Course section start  -->
+<!-- Course section start -->
 <section class="course_section layout_padding" id="course">
   <div class="container">
     <div class="heading_container">
       <h2>Courses</h2>
     </div>
-    <div class="container">
-      <div class="row">
+    
+    <div class="carousel-container" id="courseCarousel">
+      <div class="carousel-track" id="carouselTrack">
         <!-- Card 1 -->
-        <div class="card" onclick="toggleFlip(this)">
+        <div class="card">
           <div class="flip-card-inner">
             <div class="card-front">
-              <img src="images/da.jpg" class="card-img-top" alt="Course 1 Image">
+              <img src="images/da.jpg" class="card-img-top" alt="Data Analysis Course">
               <div class="card-body">
                 <h3>Mastering Data Analysis</h3>
-                <p class="card-text">Transform raw data into actionable insights that drive business success. Elevate your career with our Data Analysis course designed to equip you with the essential skills to thrive in today’s data-driven world...</p>
-                
-                
+                <p class="card-text">Transform raw data into actionable insights that drive business success. Elevate your career with our Data Analysis course designed to equip you with the essential skills to thrive in today's data-driven world.</p>
+                <p class="card-text" style="color: #007bff; cursor: pointer; text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Click here for more details!!!</p>
               </div>
-              
             </div>
             <div class="card-back">
               <div class="card-body">
-                <!-- <h4>Master Tools</h4> -->
-                <p class="card-text">
-                  <i class="fas fa-database" style="color: #f29111;"></i> 
-                
-                  <i class="fas fa-file-excel" style="color: #217346;"></i> 
-                
-                  <i class="fab fa-python" style="color: #ffde57;"></i> 
-                  <i class="fas fa-chart-line" style="color: #D3D3D3;"></i> 
-                  <i class="fas fa-chart-bar" style="color: #F2C811;"></i> 
-                </p>
-                <p><i class="fas fa-check"></i> Learn SQL, Excel, Python, and Power BI to analyze and visualize data effectively. </p>
-                <p><i class="fas fa-check"></i> Gain hands-on experience in interpreting complex data sets. </p>
+                <div class="card-text">
+                  <i class="fas fa-database" style="color: #f29111;"></i>
+                  <i class="fas fa-file-excel" style="color: #217346;"></i>
+                  <i class="fab fa-python" style="color: #ffde57;"></i>
+                  <i class="fas fa-chart-line" style="color: #D3D3D3;"></i>
+                  <i class="fas fa-chart-bar" style="color: #F2C811;"></i>
+                </div>
+                <p><i class="fas fa-check"></i> Learn SQL, Excel, Python, and Power BI to analyze and visualize data effectively.</p>
+                <p><i class="fas fa-check"></i> Gain hands-on experience in interpreting complex data sets.</p>
                 <p><i class="fas fa-check"></i> Position yourself as a key decision-maker in any industry by leveraging data to anticipate trends and inform strategies.</p>
-              <p style="font-style: italic; text-align: center;">"Take control of your future with data expertise!"</p>
-              <a href="#contact" style="font-style: italic; text-align: center; cursor: pointer;"> Contact us for further information!!! </a>
+                <p style="font-style: italic; text-align: center;">"Take control of your future with data expertise!"</p>
+                <a href="#contact" style="font-style: italic; text-align: center; cursor: pointer;"> Contact us for further information!!! </a>
               </div>
             </div>
           </div>
         </div>
-  
+        
         <!-- Card 2 -->
-        <div class="card" onclick="toggleFlip(this)">
+        <div class="card">
           <div class="flip-card-inner">
             <div class="card-front">
-              <img src="images/frnt.jpg" class="card-img-top" alt="Course 2 Image">
+              <img src="images/frnt.jpg" class="card-img-top" alt="Front-End Development Course">
               <div class="card-body">
                 <h3>Front-End Web Development</h3>
-                <p class="card-text">Become a skilled Web Developer and create dynamic, user-friendly websites. Our course equips you with the essential tools and techniques to thrive in the fast-paced world of web development...</p>
+                <p class="card-text">Become a skilled Web Developer and create dynamic, user-friendly websites. Our course equips you with the essential tools and techniques to thrive in the fast-paced world of web development.</p>
+                <p class="card-text" style="color: #007bff; cursor: pointer; text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Click here for more details!!!</p>
+              
               </div>
             </div>
             <div class="card-back">
               <div class="card-body">
-                <!-- <h4>Master Tools</h4> -->
-                <p class="card-text">
-                 
-                  <i class="fab fa-html5" style="color: #E34F26;"></i> 
-
-                  <i class="fab fa-css3-alt" style="color: #ebebeb;"></i> 
-
+                <div class="card-text">
+                  <i class="fab fa-html5" style="color: #E34F26;"></i>
+                  <i class="fab fa-css3-alt" style="color: #ebebeb;"></i>
                   <i class="fab fa-js" style="color: #F7DF1E;"></i>
-
                   <i class="fab fa-git-alt" style="color: #F05032;"></i>
-                 
-                  <i class="fab fa-github" style="color: #181717;"></i> 
-                  <p><i class="fas fa-check"></i> Learn HTML, CSS3, JavaScript (ES6), and version control with Git and GitHub. </p>
-                  <p><i class="fas fa-check"></i> Develop fully responsive, end-to-end websites that look great on any device. </p>
-                  <p><i class="fas fa-check"></i> Position yourself as a key contributor in today’s rapidly evolving web development landscape.</p>
-                </p>
-                <p style="font-style: italic; text-align: center;"> "Start building the web of tomorrow today!"</p>
+                  <i class="fab fa-github" style="color: #181717;"></i>
+                </div>
+                <p><i class="fas fa-check"></i> Learn HTML, CSS3, JavaScript (ES6), and version control with Git and GitHub.</p>
+                <p><i class="fas fa-check"></i> Develop fully responsive, end-to-end websites that look great on any device.</p>
+                <p><i class="fas fa-check"></i> Position yourself as a key contributor in today's rapidly evolving web development landscape.</p>
+                <p style="font-style: italic; text-align: center;">"Start building the web of tomorrow today!"</p>
+                <a href="#contact" style="font-style: italic; text-align: center; cursor: pointer;"> Contact us for further information!!! </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="flip-card-inner">
+            <div class="card-front">
+              <img src="images/system.jpg" class="card-img-top" alt="UI/UX Design Course">
+              <div class="card-body">
+                <h3>Network and System Support</h3>
+                <p class="card-text">Master the fundamentals of IT infrastructure, network security, and system administration. This course equips you with the skills to troubleshoot, maintain, and optimize networks and computer systems.</p>
+                <p class="card-text" style="color: #007bff; cursor: pointer; text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Click here for more details!!!</p>
+              
+              </div>
+            </div>
+            <div class="card-back">
+              <div class="card-body">
+                <div class="card-text">
+                  <i class="fas fa-network-wired" style="color: #007bff;"></i> 
+                  <i class="fas fa-server" style="color: #6c757d;"></i> 
+                  <i class="fas fa-tools" style="color: #28a745;"></i> 
+                  <i class="fas fa-laptop-code" style="color: #ff6600;"></i> 
+                  <i class="fas fa-shield-alt" style="color: #dc3545;"></i> 
+                </div>
+                <p><i class="fas fa-check"></i> Learn networking essentials, system administration, and cybersecurity best practices.</p>
+                <p><i class="fas fa-check"></i> Gain hands-on experience with Windows, Linux, and cloud-based environments.</p>
+                <p><i class="fas fa-check"></i> Prepare for industry certifications and kickstart your career in IT support.</p>
+                <p style="font-style: italic; text-align: center;">"Start your journey to becoming an IT expert today!"</p>
+                <a href="#contact" style="font-style: italic; text-align: center; cursor: pointer;"> Contact us for further information!!! </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 4 -->
+        <div class="card">
+          <div class="flip-card-inner">
+            <div class="card-front">
+              <img src="images/digital.jpg" class="card-img-top" alt="Full Stack Development Course">
+              <div class="card-body">
+                <h3>Digital Marketing</h3>
+                <p class="card-text">Unlock the power of online marketing and grow brands in the digital world. Learn data-driven strategies to reach and engage audiences effectively.</p>
+                <p class="card-text " style="color: #007bff; cursor: pointer; text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Click here for more details!!!</p>
+              </div>
+            </div>
+            <div class="card-back">
+              <div class="card-body">
+                <div class="card-text">
+                  <i class="fas fa-bullhorn" style="color: #ff5733;"></i> 
+                  <i class="fas fa-chart-line" style="color: #17a2b8;"></i> 
+                  <i class="fas fa-ad" style="color: #f4c20d;"></i> 
+                  <i class="fas fa-users" style="color: #28a745;"></i> 
+                  <i class="fas fa-search-dollar" style="color: #ff9900;"></i> 
+
+                </div>
+                <p><i class="fas fa-check"></i> Master SEO, social media marketing, content creation, and PPC advertising.</p>
+                <p><i class="fas fa-check"></i> Learn to analyze data and optimize campaigns for maximum impact.</p>
+                <p><i class="fas fa-check"></i> Build a strong digital presence and drive business growth.</p>
+                <p style="font-style: italic; text-align: center;">"Turn clicks into customers with digital marketing!"</p>
+                <a href="#contact" style="font-style: italic; text-align: center; cursor: pointer;"> Contact us for further information!!! </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="card">
+          <div class="flip-card-inner">
+            <div class="card-front">
+              <img src="images/civic.webp" class="card-img-top" alt="UI/UX Design Course">
+              <div class="card-body">
+                <h3>Civil Engineering</h3>
+                <p class="card-text">Build the future with expert knowledge in design, construction, and infrastructure. Gain practical skills to shape the world around you.</p>
+                <p class="card-text" style="color: #007bff; cursor: pointer; text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Click here for more details!!!</p>
+              
+              </div>
+            </div>
+            <div class="card-back">
+              <div class="card-body">
+                <div class="card-text">
+                  <i class="fas fa-hard-hat" style="color: #ff9900;"></i> 
+                  <i class="fas fa-drafting-compass" style="color: #007bff;"></i> 
+                  <i class="fas fa-building" style="color: #6c757d;"></i> 
+                  <i class="fas fa-ruler-combined" style="color: #28a745;"></i> 
+                  <i class="fas fa-road" style="color: #964B00;"></i> 
+
+                </div>
+                <p><i class="fas fa-check"></i> Learn structural analysis, material science, and project management..</p>
+                <p><i class="fas fa-check"></i> Master CAD tools and real-world engineering applications.</p>
+                <p><i class="fas fa-check"></i> Prepare for a rewarding career in civil engineering.</p>
+                <p style="font-style: italic; text-align: center;">"Design. Build. Transform the world!"</p>
+                <a href="#contact" style="font-style: italic; text-align: center; cursor: pointer;"> Contact us for further information!!! </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="card">
+          <div class="flip-card-inner">
+            <div class="card-front">
+              <img src="images/draftmanship.jpg" class="card-img-top" alt="UI/UX Design Course">
+              <div class="card-body">
+                <h3>Draftsmanship</h3>
+                <p class="card-text">Develop technical drawing skills and master the art of precision. This course prepares you for a career in architectural, civil, and mechanical drafting.</p>
+                <p class="card-text" style="color: #007bff; cursor: pointer; text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Click here for more details!!!</p>
+              
+              </div>
+            </div>
+            <div class="card-back">
+              <div class="card-body">
+                <div class="card-text">
+                  <i class="fas fa-pencil-ruler" style="color: #007bff;"></i>
+                  <i class="fas fa-drafting-compass" style="color: #ff9900;"></i>
+                  <i class="fas fa-ruler-combined" style="color: #28a745;"></i>
+                  <i class="fas fa-file-alt" style="color: #6c757d;"></i>
+                  <i class="fas fa-desktop" style="color: #964B00;"></i>
+ 
+                </div>
+                <p><i class="fas fa-check"></i> Learn AutoCAD, 3D modeling, and blueprint reading.</p>
+                <p><i class="fas fa-check"></i> Master technical drawing techniques for engineering and architecture.</p>
+                <p><i class="fas fa-check"></i> Build a portfolio that showcases your drafting expertise.</p>
+                <p style="font-style: italic; text-align: center;">"Turn ideas into detailed designs!"</p>
+                <a href="#contact" style="font-style: italic; text-align: center; cursor: pointer;"> Contact us for further information!!! </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 7 -->
+        <div class="card">
+          <div class="flip-card-inner">
+            <div class="card-front">
+              <img src="images/construction-management.jpg" class="card-img-top" alt="UI/UX Design Course">
+              <div class="card-body">
+                <h3>Construction Management</h3>
+                <p class="card-text">Lead successful construction projects with expertise in planning, budgeting, and site management. This course prepares you for a dynamic career in construction leadership.</p>
+                <p class="card-text" style="color: #007bff; cursor: pointer; text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Click here for more details!!!</p>
+              
+              </div>
+            </div>
+            <div class="card-back">
+              <div class="card-body">
+                <div class="card-text">
+                  <i class="fas fa-hard-hat" style="color: #ff9900;"></i>
+                  <i class="fas fa-tools" style="color: #28a745;"></i>
+                  <i class="fas fa-clipboard-list" style="color: #007bff;"></i>
+                  <i class="fas fa-building" style="color: #6c757d;"></i>
+                  <i class="fas fa-truck-loading" style="color: #964B00;"></i>
+
+                </div>
+                <p><i class="fas fa-check"></i> Learn project planning, cost estimation, and site supervision.</p>
+                <p><i class="fas fa-check"></i> Master contract management and sustainable construction practices.</p>
+                <p><i class="fas fa-check"></i> Become a key player in the construction industry.</p>
+                <p style="font-style: italic; text-align: center;">"Build and manage the world’s next great structures!"</p>
                 <a href="#contact" style="font-style: italic; text-align: center; cursor: pointer;"> Contact us for further information!!! </a>
               </div>
             </div>
           </div>
         </div>
       </div>
+      
+      <div class="carousel-navigation">
+        <button class="carousel-btn prev-btn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-btn next-btn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
     </div>
   </div>
 </section>
-<!-- course section end  -->
+<!-- Course section end -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Card flip functionality
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        card.classList.toggle('flipped');
+      });
+    });
+    
+    // Carousel functionality
+    const carousel = document.getElementById('courseCarousel');
+    const track = document.getElementById('carouselTrack');
+    const nextButton = document.querySelector('.next-btn');
+    const prevButton = document.querySelector('.prev-btn');
+    
+    let currentIndex = 0;
+    
+    // Determine if we're on mobile or desktop
+    function updateView() {
+      const isMobile = window.innerWidth < 768;
+      if (!isMobile) {
+        carousel.classList.add('desktop-view');
+      } else {
+        carousel.classList.remove('desktop-view');
+      }
+      return isMobile;
+    }
+    
+    // Set initial view
+    const isMobile = updateView();
+    
+    // Get the number of cards per view
+    function getCardsPerView() {
+      return window.innerWidth < 768 ? 1 : 2;
+    }
+    
+    // Calculate maximum index
+    function getMaxIndex() {
+      const cardsPerView = getCardsPerView();
+      return cards.length - cardsPerView;
+    }
+    
+    // Move to a specific slide
+    function moveToSlide(index) {
+      const maxIndex = getMaxIndex();
+      
+      // Ensure index is within bounds
+      if (index < 0) index = 0;
+      if (index > maxIndex) index = maxIndex;
+      
+      currentIndex = index;
+      
+      // Calculate card width (including padding)
+      const cardWidth = cards[0].offsetWidth;
+      
+      // Move track to show current card
+      track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+      
+      // Update button states
+      prevButton.disabled = currentIndex === 0;
+      nextButton.disabled = currentIndex === maxIndex;
+      
+      // Visual indication of disabled buttons
+      prevButton.style.opacity = currentIndex === 0 ? '0.5' : '1';
+      nextButton.style.opacity = currentIndex === maxIndex ? '0.5' : '1';
+    }
+    
+    // Next button click handler
+    nextButton.addEventListener('click', (e) => {
+      e.stopPropagation();
+      moveToSlide(currentIndex + 1);
+    });
+    
+    // Previous button click handler
+    prevButton.addEventListener('click', (e) => {
+      e.stopPropagation();
+      moveToSlide(currentIndex - 1);
+    });
+    
+    // Handle resize event
+    window.addEventListener('resize', () => {
+      updateView();
+      moveToSlide(currentIndex);
+    });
+    
+    // Initialize carousel
+    moveToSlide(0);
+  });
+</script>
 
 
 
@@ -290,7 +541,7 @@
     <div class="heading_container heading_center">
       <h2>What says our client</h2>
     </div>
-    <div class="carousel slide" id="carouselExampleControls" data-ride:="carousel">
+    <div class="carousel slide" id="testimonials" data-ride:="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="box">
@@ -318,13 +569,26 @@
             </div>
           </div>
         </div>
+        <div class="carousel-item">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/rohan.jpeg" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>Rohan Gurung</h4>
+              <p>"ElevateX Academy offered excellent hands-on training, leading to a job right after the course. Highly recommended for aspiring web developers!"
+
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="carousel_btn-box">
-        <a href="#carouselExampleControls" class="carousel-control-prev" role="button" data-slide="prev">
+        <a href="#testimonials" class="carousel-control-prev" role="button" data-slide="prev">
           <i class="fa fa-angle-left" aria-hidden="true"></i>
           <span class="sr-only">Previous</span>
         </a>
-        <a href="#carouselExampleControls" class="carousel-control-next" role="button" data-slide="next">
+        <a href="#testimonials" class="carousel-control-next" role="button" data-slide="next">
           <i class="fa fa-angle-right" aria-hidden="true"></i>
           <span class="sr-only">Next</span>
         </a>
@@ -345,7 +609,7 @@
                     </p>
                     <div class="icons">
                         <div class="row">
-                            <a href="index.html"><img src="images/faviconEX.png" alt="ElevateX Academy"></a>
+                            <a href="index.html"><img src="images/logo-n1.png" alt="ElevateX Academy"></a>
                             <div class="info">
                                 
                                 <div class="sub-title">ElevateX Academy</div>
@@ -441,7 +705,7 @@
       <div class="footer-info">
         <p>We acknowledge the Traditional Custodians of the unceded lands and waterways on which ElevateX Academy does business. We pay our deep respect to the Ancestors and Elders of Wadawurrung Country and also acknowledge all First Nations Peoples that make contributions to our learning communities.</p>
         <br>
-        <span><span class="far fa-copyright"></span> 2024 <a href="index.html">ElevateX Academy </a>| All rights reserved.</span>
+        <span><span class="far fa-copyright"></span> 2025 <a href="index.html">ElevateX Academy </a>| All rights reserved.</span>
       </div>
     </div>
   </footer>
